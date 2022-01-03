@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Manga</title>
+    <link rel="stylesheet" href="n.css">
+</head>
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownclick">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="right"><a href="#sign-out">Sign-out</a></li>
+            <li class="right"><a href="#sign-in">Sign-in</a></li>
+            <li class="dropdown" onclick="dropdownmenu()"><a href="javascript:void(0);">&#9776;</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="leftside-col">
+                    <h1 class="large">Best Online Free Manga</h1>
+                    <h1 class="large">Enjoy Reading Is Fun</h1>
+                </div>
+                <div>
+                <form>
+                    <h2>Title Of Manga</h2>
+                    <input value="Booktitle" class="Booktitle-inputbox" type="text" placeholder="Booktitle">
+                    <h2>Auther's Name</h2>
+                    <input value="username" class="AutherName-inputbox" type="text" placeholder="password">
+                </form>
+                </div>
+            </div>
+            <div class="col-6">
+                <div>
+                    <div>
+                        <img src="manga.png">
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        function dropdownmenu(){
+            var x = document.getElementById("dropdownclick") 
+            if (x.className === "topnav"){
+                x.className += " responsive";
+                /* change topnav to topnav.responsive*/
+            } else {
+                x.className = "topnav"
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,24 +1,136 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>navbar</title>
+    <title>Manga</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <nav>
-<ul class="topnav">
+<ul class="topnav" id="dropdownclick">
     <li><a href="#Home">Home</a></li>
     <li><a href="#Contacts">Contacts</a></li>
     <li><a href="#About">About</a></li>
     <li class="right"><a href="#Sign-in">Sign-in</a></li>
     <li class="right"><a href="#Sign-up">Sign-up</a></li>
-    <li class="dropdownIcon"><a href="">&#9776;</a></li>  
+    <li class="dropdownIcon" onclick="dropdownmenu()"><a href="javascript:void(0);">&#9776;</a></li>  
 </ul>
 </nav>
-<h1 class="header1"><a href="https://unsplash.com/s/photos/anime">ANIME PICTURES</a></h1>
+<div class="container" id="section-1-gradient">
+<div class="row">
+<div class="col-6">
+<div class="leftside-col">
+    <h1 class="large">Best Online Manga</h1>
+    <h1 class="large">Enjoy Reading Manga</h1>
+</div>
+<form>
+    <div class="leftside-col">
+        <h2>Username</h2>
+        <input name="username" class="username-inputbox" type="text" placeholder="username">
+        <h2>Password</h2>
+        <input name="password" class="password-inputbox" type="text" placeholder="password">    
+    </div>
+</form>
+</div>
+<div class="col-6">
+    <div class="rightside-col">
+        <div class="mangaimage">
+            <img src="manga.png">
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<hr>
+
+<header>
+    <h1 class="section-2-header">
+        Best And Lastest Mangas Available for free
+    </h1>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="box">
+                <div class="icon">
+                    <img src="manga1.png">
+                </div>
+                <label>Read me!!</label>
+                <p>
+                    Manga (Japanese: 漫画 [maŋga]) are comics or graphic novels originating from Japan. Most manga conform to a style
+                    developed in Japan in the late 19th century, and the form has a long prehistory in earlier Japanese art. The term
+                    manga is used in Japan to refer to both comics and cartooning. Outside of Japan, the word is typically used to refer to
+                    comics originally published in the country.
+                </p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="box">
+                <div class="icon">
+                    <img src="manga2.png">
+                </div>
+                <label>Mangas Are Fun To Read</label>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book.
+                </p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="box">
+                <div class="icon">
+                    <img src="manga3.png">
+                </div>
+                <label>And Educative</label>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book.
+                </p>
+            </div>
+        </div>
+    </div> 
+    <div class="row">
+        <div class="col-12">
+            <button class="readmore">Read More</button>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="container">
+<div class="row">
+<div class="col-7">
+    <article>
+        <p>
+            The Beginning After The End follows the life of the late King Grey after his untimely and mysterious death. Reborn as
+            Arthur Leywin, he seeks to correct his past mistakes in the vibrant new continent of Dicathen, a world of magic and
+            fantastical creatures. Equipped with the knowledge of a powerful king in his mid-thirties, Arthur navigates his new life
+            as the magic-wielding child of two retired adventurers and gains purpose through each of his experiences—something he
+            lacked in his previous life.
+        </p>   
+    </article>
+</div>
+<div class="col-5">
+<div class="beginning-image">
+<img src="beginning after the end.jpg">
+</div>
+</div>
+</div>
+</div>
 
 
+<script>
+    function dropdownmenu(){
+    var x = document.getElementById("dropdownclick");
+    if (x.className === "topnav"){
+        x.className += " responsive";
+        /* change topnav to topnav.responsive*/
+    }else{
+        x.className = "topnav"
+    }
+}
 
-
+</script>
 </body>
 </html>
