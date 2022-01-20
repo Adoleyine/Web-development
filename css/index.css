@@ -8,11 +8,15 @@ nav {
 body {
   line-height: 1;
   margin: 0;
-  background: #c0c0c0;
-}
+  background: url("https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png"), #c0c0c0;
+  }
+
 label {
   font-size: 30px;
   font-weight: bold;
+}
+label.label-color{
+  color: steelblue;
 }
 p {
   font-size: 20px;
@@ -245,6 +249,11 @@ input[type="text"] {
   min-width: 100px;
   padding: 5px;
   border-radius: 8px;
+}
+input[type="submit"]{
+  font-size: 25px;
+  border-radius: 8PX;
+  color: steelblue;
 }
 
 /* ######## H1 TAG ####### */

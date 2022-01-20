@@ -1,0 +1,29 @@
+body{
+  background: silver;
+}
+nav{
+  background: linear-gradient(to right,#97BC62FF,#2C5F2D);
+  background: -o-linear-gradient(to right,#97BC62FF,#2C5F2D);
+  background: -webkit-linear-gradient(to right,#97BC62FF,#2C5F2D);
+  overflow: hidden;
+padding: 10px 10px 10px 10px;
+}
+ul li {
+  list-style: none;
+  float: left;
+}
+ul li.right{
+  float:right;
+}
+ul li a{
+text-transform: uppercase;
+text-decoration: none;
+color: black;
+font-size: 20px;
+min-height: 16px;
+padding: 10px;
+}
+ul li a:hover{
+  color: #00ffff;
+  background: #ffffff;
+}
