@@ -6,6 +6,7 @@ nav {
   display: block;
 }
 body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1;
   margin: 0;
   background: url("https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png"), #c0c0c0;
@@ -89,6 +90,7 @@ article p {
 nav {
   width: 100%;
   margin: 0;
+  /* position: fixed; */
 }
 nav {
   background: linear-gradient(to right, #2f00ff, #00ffff);
@@ -108,11 +110,13 @@ ul.topnav li.right {
 }
 ul.topnav li a {
   display: block;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-decoration: none;
   text-align: center;
   min-height: 16px;
   color: #000000;
   padding: 14px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 ul.topnav li a:hover {
@@ -122,67 +126,7 @@ ul.topnav li a:hover {
 ul.topnav li.dropdownIcon {
   display: none;
 }
-/* ######### moblie version ######## */
-@media screen and (max-width: 680px) {
-  ul.topnav li:not(:nth-child(1)) {
-    display: none;
-  }
-  ul.topnav li.dropdownIcon {
-    display: block;
-    float: right;
-  }
-  ul.topnav.responsive li.dropdownIcon {
-    position: absolute;
-  }
-  ul.topnav.responsive {
-    position: relative;
-  }
-  ul.topnav.responsive li {
-    display: inline;
-    float: none;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
-  #section-2-header {
-    font-size: 30px;
-  }
-  article p {
-    font-size: 20px;
-  }
-  .col-6,
-  .col-4,
-  .col-7,
-  .col-5 {
-    width: 100%;
-    margin: 0;
-  }
-  div.box {
-    padding: 5px;
-    display: block;
-  }
-  div.beginning-image img {
-    width: 100%;
-  }
-  div.leftside-col,
-  div.rightside-col {
-    margin: 15px;
-  }
-  input[type="text"] {
-    width: 300px;
-  }
 
-  .leftside-col {
-    margin: 0;
-  }
-  .mangaimage img {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    overflow: hidden;
-  }
-}
 /* ############## custom settings ######### */
 #section-1-gradient {
   background: -o-linear-gradient(#ffffff, #000000);
@@ -250,10 +194,115 @@ input[type="text"] {
   padding: 5px;
   border-radius: 8px;
 }
+input[type="email"] {
+  font-size: 20px;
+  width: 400px;
+  min-width: 100px;
+  padding: 5px;
+  border-radius: 8px;
+}
+input[type="password"] {
+  font-size: 20px;
+  width: 400px;
+  min-width: 100px;
+  padding: 5px;
+  border-radius: 8px;
+}
+input[type="date"] {
+  font-size: 20px;
+  width: 400px;
+  min-width: 100px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
 input[type="submit"]{
   font-size: 25px;
   border-radius: 8PX;
   color: steelblue;
 }
+form input.submitbutton{
+ align-self: center;
+}
+h5.copyright{
+  text-align: center;
+}
+.contact_us fieldset a{
+  text-decoration: none;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+}
+.contact_us fieldset a:hover{
+  color: white;
+  background-color: black;
+}
 
 /* ######## H1 TAG ####### */
+/* ######### moblie version ######## */
+@media screen and (max-width: 680px) {
+  ul.topnav li:not(:nth-child(1)) {
+    display: none;
+  }
+  ul.topnav li.dropdownIcon {
+    display: block;
+    float: right;
+  }
+  ul.topnav.responsive li.dropdownIcon {
+    position: absolute;
+  }
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li {
+    display: inline;
+    float: none;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  #section-2-header {
+    font-size: 30px;
+  }
+  article p {
+    font-size: 20px;
+  }
+  .col-6,
+  .col-4,
+  .col-7,
+  .col-5 {
+    width: 100%;
+    margin: 0;
+  }
+  div.box {
+    padding: 5px;
+    display: block;
+  }
+  div.container{
+    width: 100%;
+  }
+  img{
+    width: 100%;
+  }
+  div.beginning-image img {
+    width: 100%;
+  }
+  div.leftside-col,
+  div.rightside-col {
+    margin: 15px;
+  }
+  input[type="text"] {
+    width: 300px;
+  }
+
+  .leftside-col {
+    margin: 0;
+  }
+  .mangaimage img {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+}

@@ -1,32 +1,196 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title></title>
-        <link rel="stylesheet" href="freecodecamp.css">
-    </head>
-     <body>
-         <header>
-             <h1>MANGA!!! @60</h1>
-         </header>
-         <main>
-             <article>
-                 <h2>Solo leveling</h2>
-                 <p>
-                    In a world where hunters, humans who possess magical abilities, must battle deadly monsters <br>to protect mankind from certain annihilation, a notoriously weak hunter named <br>Sung Jinwoo finds himself in a seemingly endless struggle for survival.
-                </p>
-                <button>read more</button>
-             </article>
-             <article>
-                  <h2>Beginning after the end</h2>
-                  <p>
-                    The story begins with the mighty King Grey waking up as a newborn baby named Arthur Leywin.<br> He realizes that someone probably assassinated him and that he has reincarnated into a new family, who resides on a continent called Dicathen.<br> After being given a chance at a new life, Arthur decides to live his life differently than before—he was going to be loved and supported by friends and family.
-                 </p>
-                 <button>read more</button>
-                </article>
-            
-         </main>
-         <footer>
-            &copy; 2022 Scoobarasa
-         </footer>
-     </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" type="text/css" href="/css/freecodecamp.css">
+</head>
+<body>
+    <img src="/images/manga3.png" alt="menu" height="" width="200">
+    <ol>
+       <b><li><h2>Berverages</h2></li></b> 
+        <ul>
+           <h4> <u>Hot Berverages</u></h4>
+            <ul type="circle">
+                <li>Tea</li>
+                <li>Coffee</li>
+                <ol type="a" >
+                    <li>With Milk</li>
+                    <li>Without Milk</li>
+                </ol>
+                <li>Hot Chocolate</li>
+            </ul>
+            <h4>Cold Berverages</h4>
+            <ol>
+                <li>Iced Coffee</li>
+                <li>Lemonade</li>
+                <li>Oranage Juice</li>
+            </ol>
+        </ul>
+       <b><li><h2>Sandwiches</h2></li></b> 
+        <ul>
+           <strong><li>Cheese Sandwich</li></strong> 
+           <em>White cheese, tomatoes, cucumber, lettuce</em>
+           <strong><li>Russian Salad Sandwich</li></strong> 
+           <em>White cheese, tomatoes, cucumber, lettuce</em>
+           <strong><li>Chicken Sandwich</li></strong> 
+           <em>White cheese, tomatoes, cucumber, lettuce</em>
+        </ul>
+        <b><li><h2>Desserts</h2></li></b>
+        <ul>
+            <li>Iced Cream</li>
+            <li>Cheese Cake</li>
+            <ol type="i">
+                <li>Blueberry Cheese Cake</li>
+                <li>Chocolate Cheese Cake</li>
+            </ol>
+        </ul>
+    </ol>
+    <table border="1">
+        <tr>
+            <th></th>
+            <td>HELLO</td>
+            <td> WORLD</td>
+            <td>HOW</td>
+            <td>ARE</td>
+            <td>YOU</td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>HELLO</td>
+            <td> WORLD</td>
+            <td>HOW</td>
+            <td>ARE</td>
+            <td>YOU</td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>HELLO</td>
+            <td> WORLD</td>
+            <td>HOW</td>
+            <td>ARE</td>
+            <td>YOU</td>
+        </tr>
+    </table>
+    <table border="1" width="200" height="100">
+        <thead>
+            <tr>
+                <th>Fruits</th>
+                <th>Vegetables</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mango</td>
+                <td>tomatoes</td>
+            </tr>
+            <tr>
+                <td>Oranage</td>
+                <td>Lettuce</td>
+            </tr>
+            <tr>
+               <td>Banana</td>
+                <td>Carrot</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    
+    <table border="1">
+        <thead>
+            <th>Flags</th>
+            <th>Country</th>
+            <th>Capital</th>
+            <th>Population</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="/images/beginning after the end.jpg" width="50" alt="beginning after the end "></td>
+                <td><a href="#">England</a></td>
+                <td>London</td>
+                <td>55 Million</td>
+            </tr>
+            <tr>
+                <td><img src="/images/Abandoned.jpg" width="50" alt="abandoned son"></img></td>
+                <td><a href="#">United States</a></td>
+                <td>Washington</td>
+                <td>382 Million</td>
+            </tr>
+            <tr>
+                <td><img src="/images/manga.png" width="50" alt="manga"></td>
+                <td><a href="#">China</a></td>
+                <td>Beijing</td>
+                <td>1.5 Billion</td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="" method="post">
+       <fieldset>
+           <legend>Car Magazine Review</legend>
+           <label for="Username">Username
+            <input name="Username" type="text" placeholder="Akolgo Prince" required><br><br>
+        </label>
+        <label for="Email">Email
+                <input type="email" name="Email" placeholder="adolo@gmail.com" required><br><br>
+        </label>
+        <label for="Password">Password
+            <input type="password" pattern=".{4,8}" title="write 4-8 characters" name="password" placeholder="123456" required><br><br>
+        </label>
+        <label for="Male">Male
+            <input type="radio" name="gender" value="male" required>
+        </label>
+        <label for="Female">Female
+            <input type="radio" name="gender" value="female" required><br><br>
+        </label>
+        <label for="Birthday">Birthday
+            <input type="date" required><br><br>
+        </label>
+        <label for="Submit">
+            <input type="submit" value="Submit">
+        </label>
+       </fieldset>
+    </form>
+    <table border="1">
+        <thead>
+            <th>Flags</th>
+            <th>Country</th>
+            <th>Capital</th>
+            <th>Population</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="/images/beginning after the end.jpg" width="50" alt="beginning after the end "></td>
+                <td><a href="#" t>England</a></td>
+                <td>London</td>
+                <td>55 Million</td>
+            </tr>
+            <tr>
+                <td><img src="/images/Abandoned.jpg" width="50" alt="abandoned son"></img></td>
+                <td><a href="#">United States</a></td>
+                <td>Washington</td>
+                <td>382 Million</td>
+            </tr>
+            <tr>
+                <td><img src="/images/manga.png" width="50" alt="manga"></td>
+                <td><a href="#">China</a></td>
+                <td>Beijing</td>
+                <td>1.5 Billion</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="flexcontainer">
+        <div class="box1">box1</div>
+    </div>
+    <div class="flexcontainer">
+        <div class="box2">box2
+            <img src="/images/solo leveling.jpg">
+        </div>
+    </div>
+    <div class="flexcontainer">
+        <div class="box3">box3</div>
+    </div>
+</body>
 </html>
